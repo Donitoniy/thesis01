@@ -1,0 +1,23 @@
+{
+  "name": "ai-learning-platform",
+  "version": "1.0.0",
+  "description": "AI学习平台 - 集成Firebase AI功能的教育网站",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "dependencies": {
+    "firebase": "^10.7.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "ai",
+    "education",
+    "firebase",
+    "learning",
+    "platform"
+  ],
+  "author": "AI Learning Platform Team",
+  "license": "MIT"
+}

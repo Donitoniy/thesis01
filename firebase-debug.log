@@ -1,0 +1,40 @@
+[debug] [2025-11-02T04:34:45.701Z] ----------------------------------------------------------------------
+[debug] [2025-11-02T04:34:45.703Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\ode-global\node_modules\firebase-tools\lib\bin\firebase.js login --debug
+[debug] [2025-11-02T04:34:45.703Z] CLI Version:   12.9.1
+[debug] [2025-11-02T04:34:45.703Z] Platform:      win32
+[debug] [2025-11-02T04:34:45.703Z] Node Version:  v16.18.0
+[debug] [2025-11-02T04:34:45.704Z] Time:          Sun Nov 02 2025 12:34:45 GMT+0800 (中国标准时间)
+[debug] [2025-11-02T04:34:45.704Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-02T04:34:45.706Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=11619568&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-11-02T04:34:46.434Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-11-02T04:34:46.434Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-11-02T04:35:33.931Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2025-11-02T04:35:33.932Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2025-11-02T04:35:54.975Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------49ac5a8074852866cc289923","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: connect ETIMEDOUT 173.194.202.84:443
+[debug] [2025-11-02T04:35:54.976Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
+    at RetryOperation._fn (C:\Program Files\nodejs\ode-global\node_modules\firebase-tools\lib\apiv2.js:239:31)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[debug] [2025-11-02T04:35:54.981Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
+[debug] [2025-11-02T04:35:54.981Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"ca624c84-3aec-4bc2-a0b4-b7d5b445dd3d"}
+[debug] [2025-11-02T04:36:05.329Z] *** [apiv2] error from fetch(https://auth.firebase.tools/attest, {"headers":{},"method":"POST","body":"{\"session_id\":\"ca624c84-3aec-4bc2-a0b4-b7d5b445dd3d\"}"}): FetchError: request to https://auth.firebase.tools/attest failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2025-11-02T04:36:05.527Z] FetchError: request to https://auth.firebase.tools/attest failed, reason: Client network socket disconnected before secure TLS connection was established
+    at ClientRequest.<anonymous> (C:\Program Files\nodejs\ode-global\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
+    at ClientRequest.emit (node:events:513:28)
+    at ClientRequest.emit (node:domain:489:12)
+    at TLSSocket.socketErrorListener (node:_http_client:494:9)
+    at TLSSocket.emit (node:events:513:28)
+    at TLSSocket.emit (node:domain:489:12)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+[error] 
+[error] Error: Failed to make request to https://auth.firebase.tools/attest

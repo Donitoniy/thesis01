@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧编程 - 中小学编程与AI教学辅助平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs/editor/editor.main.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>智慧编程</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-section="programming">
+                        <i class="fas fa-laptop-code"></i>
+                        编程学习
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="ai">
+                        <i class="fas fa-robot"></i>
+                        AI教学
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="homework">
+                        <i class="fas fa-tasks"></i>
+                        作业管理
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="profile">
+                        <i class="fas fa-user"></i>
+                        个人中心
+                    </a>
+                </li>
+            </ul>
+            <div class="auth-buttons">
+                <button id="loginBtn" class="btn btn-outline">登录</button>
+                <button id="logoutBtn" class="btn btn-primary" style="display: none;">退出</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容区域 -->
+    <main class="main-content">
+        <!-- 编程学习模块 -->
+        <section id="programming" class="content-section active">
+            <div class="section-header">
+                <h1>编程学习</h1>
+                <p>从基础到进阶，轻松掌握编程技能</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card" data-feature="courses">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>编程课程</h3>
+                    <p>系统化的编程课程，适合不同年龄段的学生</p>
+                    <button class="btn btn-primary">开始学习</button>
+                </div>
+                <div class="feature-card" data-feature="practice">
+                    <div class="feature-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <h3>代码练习</h3>
+                    <p>丰富的编程练习题，提升编程实战能力</p>
+                    <button class="btn btn-primary">开始练习</button>
+                </div>
+            </div>
+
+            <div class="code-challenge">
+                <h2>编程挑战</h2>
+                <p>在左侧编写代码,在右侧看到神奇的效果!</p>
+                <div class="challenge-controls">
+                    <select id="challenge-select">
+                        <option value="hello">你好世界 - 简单</option>
+                    </select>
+                    <button id="run-code-btn" class="btn btn-primary">▷ 运行代码</button>
+                    <button id="reset-code-btn" class="btn btn-outline">重置</button>
+                    <button id="hint-btn" class="btn btn-outline">获取提示</button>
+                </div>
+                <div class="editor-container">
+                    <div class="code-editor-wrapper">
+                        <h3>代码编辑器</h3>
+                        <div id="code-editor"></div>
+                    </div>
+                    <div class="output-wrapper">
+                        <h3>输出</h3>
+                        <div id="output">点击“运行代码”查看输出</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI教学模块 -->
+        <section id="ai" class="content-section">
+            <div class="section-header">
+                <h1>AI教学</h1>
+                <p>探索人工智能的奥秘，培养未来思维</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card" data-feature="ai-basics">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI基础知识</h3>
+                    <p>了解人工智能的基本概念和应用场景</p>
+                    <button class="btn btn-primary">开始学习</button>
+                </div>
+                <div class="feature-card" data-feature="ai-tools">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>AI工具体验</h3>
+                    <p>体验各种AI工具，感受人工智能的魅力</p>
+                    <button class="btn btn-primary">立即体验</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI基础知识详细页面 -->
+        <section id="ai-basics-detail" class="content-section" style="display: none;">
+            <div class="section-header">
+                <h1>AI基础知识</h1>
+                <p>系统学习人工智能的核心概念</p>
+                <button class="btn btn-secondary back-btn" onclick="showSection('ai')">← 返回AI教学</button>
+            </div>
+            
+            <div class="ai-learning-container">
+                <div class="ai-topics">
+                    <div class="topic-card active" data-topic="intro">
+                        <h3>🤖 什么是人工智能</h3>
+                        <p>了解AI的定义和发展历程</p>
+                    </div>
+                    <div class="topic-card" data-topic="types">
+                        <h3>🧠 AI的分类</h3>
+                        <p>机器学习、深度学习、神经网络</p>
+                    </div>
+                    <div class="topic-card" data-topic="applications">
+                        <h3>🌟 AI应用场景</h3>
+                        <p>AI在各行各业的实际应用</p>
+                    </div>
+                    <div class="topic-card" data-topic="future">
+                        <h3>🚀 AI的未来</h3>
+                        <p>人工智能的发展趋势和挑战</p>
+                    </div>
+                </div>
+                
+                <div class="topic-content">
+                    <div id="topic-intro" class="topic-detail active">
+                        <h2>什么是人工智能？</h2>
+                        <div class="content-block">
+                            <p><strong>人工智能（Artificial Intelligence，AI）</strong>是指由机器展现出的智能行为，能够模拟人类的认知功能。</p>
+                            
+                            <h3>🎯 核心特征：</h3>
+                            <ul>
+                                <li><strong>学习能力</strong>：从数据中学习和改进</li>
+                                <li><strong>推理能力</strong>：基于已知信息得出结论</li>
+                                <li><strong>感知能力</strong>：理解和处理环境信息</li>
+                                <li><strong>决策能力</strong>：在复杂情况下做出选择</li>
+                            </ul>
+                            
+                            <h3>📈 发展历程：</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <strong>1950年代</strong> - 图灵测试，AI概念诞生
+                                </div>
+                                <div class="timeline-item">
+                                    <strong>1980年代</strong> - 专家系统兴起
+                                </div>
+                                <div class="timeline-item">
+                                    <strong>2010年代</strong> - 深度学习突破
+                                </div>
+                                <div class="timeline-item">
+                                    <strong>2020年代</strong> - 大语言模型时代
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="topic-types" class="topic-detail">
+                        <h2>AI的分类</h2>
+                        <div class="content-block">
+                            <div class="ai-type-grid">
+                                <div class="ai-type-card">
+                                    <h3>🤖 机器学习 (ML)</h3>
+                                    <p>让计算机通过数据学习，无需明确编程</p>
+                                    <ul>
+                                        <li>监督学习</li>
+                                        <li>无监督学习</li>
+                                        <li>强化学习</li>
+                                    </ul>
+                                </div>
+                                <div class="ai-type-card">
+                                    <h3>🧠 深度学习 (DL)</h3>
+                                    <p>模拟人脑神经网络的机器学习方法</p>
+                                    <ul>
+                                        <li>卷积神经网络 (CNN)</li>
+                                        <li>循环神经网络 (RNN)</li>
+                                        <li>Transformer架构</li>
+                                    </ul>
+                                </div>
+                                <div class="ai-type-card">
+                                    <h3>💬 自然语言处理 (NLP)</h3>
+                                    <p>让计算机理解和生成人类语言</p>
+                                    <ul>
+                                        <li>文本分析</li>
+                                        <li>机器翻译</li>
+                                        <li>对话系统</li>
+                                    </ul>
+                                </div>
+                                <div class="ai-type-card">
+                                    <h3>👁️ 计算机视觉 (CV)</h3>
+                                    <p>让计算机"看懂"图像和视频</p>
+                                    <ul>
+                                        <li>图像识别</li>
+                                        <li>目标检测</li>
+                                        <li>人脸识别</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="topic-applications" class="topic-detail">
+                        <h2>AI应用场景</h2>
+                        <div class="content-block">
+                            <div class="application-grid">
+                                <div class="app-card">
+                                    <h3>🏥 医疗健康</h3>
+                                    <ul>
+                                        <li>医学影像诊断</li>
+                                        <li>药物研发</li>
+                                        <li>个性化治疗</li>
+                                        <li>健康监测</li>
+                                    </ul>
+                                </div>
+                                <div class="app-card">
+                                    <h3>🚗 交通出行</h3>
+                                    <ul>
+                                        <li>自动驾驶</li>
+                                        <li>智能导航</li>
+                                        <li>交通优化</li>
+                                        <li>车辆识别</li>
+                                    </ul>
+                                </div>
+                                <div class="app-card">
+                                    <h3>🛒 电商零售</h3>
+                                    <ul>
+                                        <li>推荐系统</li>
+                                        <li>价格优化</li>
+                                        <li>库存管理</li>
+                                        <li>客服机器人</li>
+                                    </ul>
+                                </div>
+                                <div class="app-card">
+                                    <h3>🎓 教育学习</h3>
+                                    <ul>
+                                        <li>个性化学习</li>
+                                        <li>智能批改</li>
+                                        <li>学习分析</li>
+                                        <li>虚拟助教</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="topic-future" class="topic-detail">
+                        <h2>AI的未来</h2>
+                        <div class="content-block">
+                            <h3>🌟 发展趋势：</h3>
+                            <div class="trend-list">
+                                <div class="trend-item">
+                                    <h4>通用人工智能 (AGI)</h4>
+                                    <p>具备人类水平的通用智能，能够处理各种复杂任务</p>
+                                </div>
+                                <div class="trend-item">
+                                    <h4>多模态AI</h4>
+                                    <p>同时处理文本、图像、音频等多种数据类型</p>
+                                </div>
+                                <div class="trend-item">
+                                    <h4>边缘计算AI</h4>
+                                    <p>在设备端直接运行AI模型，提高响应速度</p>
+                                </div>
+                                <div class="trend-item">
+                                    <h4>可解释AI</h4>
+                                    <p>让AI的决策过程更加透明和可理解</p>
+                                </div>
+                            </div>
+                            
+                            <h3>⚠️ 挑战与思考：</h3>
+                            <ul>
+                                <li><strong>伦理问题</strong>：AI决策的公平性和责任归属</li>
+                                <li><strong>隐私保护</strong>：个人数据的安全和使用边界</li>
+                                <li><strong>就业影响</strong>：AI对传统工作岗位的冲击</li>
+                                <li><strong>技术安全</strong>：防止AI技术被恶意使用</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI工具体验详细页面 -->
+        <section id="ai-tools-detail" class="content-section" style="display: none;">
+            <div class="section-header">
+                <h1>AI工具体验</h1>
+                <p>亲身体验各种实用的AI工具</p>
+                <button class="btn btn-secondary back-btn" onclick="showSection('ai')">← 返回AI教学</button>
+            </div>
+            
+            <div class="ai-tools-container">
+                <div class="tools-grid">
+                    <div class="tool-card" data-tool="text-generator">
+                        <div class="tool-icon">📝</div>
+                        <h3>智能文本生成</h3>
+                        <p>体验AI写作助手，生成各种类型的文本内容</p>
+                        <button class="btn btn-primary tool-btn">开始体验</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="translator">
+                        <div class="tool-icon">🌐</div>
+                        <h3>智能翻译</h3>
+                        <p>多语言实时翻译，支持中英文互译</p>
+                        <button class="btn btn-primary tool-btn">开始翻译</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="summarizer">
+                        <div class="tool-icon">📄</div>
+                        <h3>文本摘要</h3>
+                        <p>自动提取长文本的关键信息和摘要</p>
+                        <button class="btn btn-primary tool-btn">生成摘要</button>
+                    </div>
+                    
+                    <div class="tool-card" data-tool="chatbot">
+                        <div class="tool-icon">🤖</div>
+                        <h3>AI对话助手</h3>
+                        <p>与AI进行自然对话，获得各种问题的解答</p>
+                        <button class="btn btn-primary tool-btn">开始对话</button>
+                    </div>
+                </div>
+                
+                <!-- 工具使用区域 -->
+                <div class="tool-workspace">
+                    <div id="text-generator-workspace" class="workspace-content">
+                        <h3>📝 智能文本生成器</h3>
+                        <div class="input-group">
+                            <label>选择文本类型：</label>
+                            <select id="textType">
+                                <option value="story">故事创作</option>
+                                <option value="email">邮件写作</option>
+                                <option value="essay">文章写作</option>
+                                <option value="poem">诗歌创作</option>
+                            </select>
+                        </div>
+                        <div class="input-group">
+                            <label>输入主题或关键词：</label>
+                            <textarea id="textPrompt" placeholder="例如：写一个关于友谊的小故事..."></textarea>
+                        </div>
+                        <button class="btn btn-primary" onclick="generateText()">生成文本</button>
+                        <div id="textOutput" class="output-area"></div>
+                    </div>
+                    
+                    <div id="translator-workspace" class="workspace-content">
+                        <h3>🌐 智能翻译器</h3>
+                        <div class="translator-container">
+                            <div class="translate-input">
+                                <label>原文 (中文)：</label>
+                                <textarea id="sourceText" placeholder="请输入要翻译的中文文本..."></textarea>
+                            </div>
+                            <div class="translate-controls">
+                                <button class="btn btn-primary" onclick="translateText()">翻译</button>
+                            </div>
+                            <div class="translate-output">
+                                <label>译文 (English)：</label>
+                                <textarea id="translatedText" readonly placeholder="翻译结果将显示在这里..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="summarizer-workspace" class="workspace-content">
+                        <h3>📄 文本摘要生成器</h3>
+                        <div class="input-group">
+                            <label>输入要摘要的文本：</label>
+                            <textarea id="summaryInput" placeholder="粘贴或输入长文本内容..."></textarea>
+                        </div>
+                        <button class="btn btn-primary" onclick="generateSummary()">生成摘要</button>
+                        <div id="summaryOutput" class="output-area"></div>
+                    </div>
+                    
+                    <div id="chatbot-workspace" class="workspace-content">
+                        <h3>🤖 AI对话助手</h3>
+                        <div class="chat-container">
+                            <div id="chatMessages" class="chat-messages">
+                                <div class="message bot-message">
+                                    <div class="message-content">
+                                        你好！我是AI助手，有什么可以帮助你的吗？
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-input">
+                                <input type="text" id="chatInput" placeholder="输入你的问题..." onkeypress="handleChatEnter(event)">
+                                <button class="btn btn-primary" onclick="sendMessage()">发送</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 编程课程模块 -->
+        <section id="programming-courses" class="content-section" style="display: none;">
+            <div class="section-header">
+                <h1>编程课程</h1>
+                <p>系统化的编程学习课程，适合不同年龄段和水平的学生</p>
+            </div>
+            
+            <div class="course-categories">
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="beginner">入门课程</button>
+                    <button class="tab-btn" data-category="intermediate">进阶课程</button>
+                    <button class="tab-btn" data-category="advanced">高级课程</button>
+                </div>
+                
+                <div class="course-content">
+                    <div id="beginner-courses" class="course-category active">
+                        <div class="course-grid">
+                            <div class="course-card" data-course="scratch">
+                                <div class="course-icon">🎨</div>
+                                <h3>Scratch编程</h3>
+                                <p>适合6-12岁儿童的图形化编程语言</p>
+                                <div class="course-info">
+                                    <span class="difficulty">难度：⭐</span>
+                                    <span class="duration">时长：4周</span>
+                                </div>
+                                <button class="btn btn-primary" onclick="startCourse('scratch')">开始学习</button>
+                            </div>
+                            
+                            <div class="course-card" data-course="python-basic">
+                                <div class="course-icon">🐍</div>
+                                <h3>Python基础</h3>
+                                <p>最受欢迎的编程语言入门课程</p>
+                                <div class="course-info">
+                                    <span class="difficulty">难度：⭐⭐</span>
+                                    <span class="duration">时长：6周</span>
+                                </div>
+                                <button class="btn btn-primary" onclick="startCourse('python-basic')">开始学习</button>
+                            </div>
+                            
+                            <div class="course-card" data-course="html-css">
+                                <div class="course-icon">🌐</div>
+                                <h3>网页制作基础</h3>
+                                <p>HTML和CSS网页设计入门</p>
+                                <div class="course-info">
+                                    <span class="difficulty">难度：⭐⭐</span>
+                                    <span class="duration">时长：5周</span>
+                                </div>
+                                <button class="btn btn-primary" onclick="startCourse('html-css')">开始学习</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="intermediate-courses" class="course-category">
+                        <div class="course-grid">
+                            <div class="course-card" data-course="javascript">
+                                <div class="course-icon">⚡</div>
+                                <h3>JavaScript编程</h3>
+                                <p>动态网页开发和交互设计</p>
+                                <div class="course-info">
+                                    <span class="difficulty">难度：⭐⭐⭐</span>
+                                    <span class="duration">时长：8周</span>
+                                </div>
+                                <button class="btn btn-primary" onclick="startCourse('javascript')">开始学习</button>
+                            </div>
+                            
+                            <div class="course-card" data-course="python-advanced">
+                                <div class="course-icon">🚀</div>
+                                <h3>Python进阶</h3>
+                                <p>面向对象编程和数据处理</p>
+                                <div class="course-info">
+                                    <span class="difficulty">难度：⭐⭐⭐</span>
+                                    <span class="duration">时长：10周</span>
+                                </div>
+                                <button class="btn btn-primary" onclick="startCourse('python-advanced')">开始学习</button>
+                            </div>
+                            
+                            <div class="course-card" data-course="java">
+                                <div class="course-icon">☕</div>
+                                <h3>Java编程</h3>
+                                <p>企业级应用开发基础</p>
+                                <div class="course-info">
+                                    <span class="difficulty">难度：⭐⭐⭐</span>
+                                    <span class="duration">时长：12周</span>
+                                </div>
+                                <button class="btn btn-primary" onclick="startCourse('java')">开始学习</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="advanced-courses" class="course-category">
+                        <div class="course-grid">
+                            <div class="course-card" data-course="cpp">
+                                <div class="course-icon">⚙️</div>
+                                <h3>C++编程</h3>
+                                <p>系统级编程和算法优化</p>
+                                <div class="course-info">
+                                    <span class="difficulty">难度：⭐⭐⭐⭐</span>
+                                    <span class="duration">时长：14周</span>
+                                </div>
+                                <button class="btn btn-primary" onclick="startCourse('cpp')">开始学习</button>
+                            </div>
+                            
+                            <div class="course-card" data-course="data-structures">
+                                <div class="course-icon">🏗️</div>
+                                <h3>数据结构与算法</h3>
+                                <p>计算机科学核心课程</p>
+                                <div class="course-info">
+                                    <span class="difficulty">难度：⭐⭐⭐⭐</span>
+                                    <span class="duration">时长：16周</span>
+                                </div>
+                                <button class="btn btn-primary" onclick="startCourse('data-structures')">开始学习</button>
+                            </div>
+                            
+                            <div class="course-card" data-course="ai-programming">
+                                <div class="course-icon">🤖</div>
+                                <h3>AI编程入门</h3>
+                                <p>机器学习和深度学习基础</p>
+                                <div class="course-info">
+                                    <span class="difficulty">难度：⭐⭐⭐⭐⭐</span>
+                                    <span class="duration">时长：20周</span>
+                                </div>
+                                <button class="btn btn-primary" onclick="startCourse('ai-programming')">开始学习</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 代码练习模块 -->
+        <section id="code-practice" class="content-section" style="display: none;">
+            <div class="section-header">
+                <h1>代码练习</h1>
+                <p>通过实际编程练习提升编程技能</p>
+            </div>
+            
+            <div class="practice-dashboard">
+                <div class="practice-stats">
+                    <div class="stat-card">
+                        <h3>已完成</h3>
+                        <div class="stat-number">12</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>总题目</h3>
+                        <div class="stat-number">50</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>正确率</h3>
+                        <div class="stat-number">85%</div>
+                    </div>
+                </div>
+                
+                <div class="practice-categories">
+                    <div class="practice-tabs">
+                        <button class="tab-btn active" data-practice="basic">基础练习</button>
+                        <button class="tab-btn" data-practice="algorithm">算法练习</button>
+                        <button class="tab-btn" data-practice="project">项目练习</button>
+                    </div>
+                    
+                    <div class="practice-content">
+                        <div id="basic-practice" class="practice-category active">
+                            <div class="exercise-list">
+                                <div class="exercise-item" data-difficulty="easy">
+                                    <div class="exercise-info">
+                                        <h3>Hello World</h3>
+                                        <p>编写你的第一个程序，输出"Hello, World!"</p>
+                                        <div class="exercise-meta">
+                                            <span class="difficulty easy">简单</span>
+                                            <span class="language">Python</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="startExercise('hello-world')">开始练习</button>
+                                </div>
+                                
+                                <div class="exercise-item" data-difficulty="easy">
+                                    <div class="exercise-info">
+                                        <h3>变量和数据类型</h3>
+                                        <p>学习如何声明变量和使用不同的数据类型</p>
+                                        <div class="exercise-meta">
+                                            <span class="difficulty easy">简单</span>
+                                            <span class="language">Python</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="startExercise('variables')">开始练习</button>
+                                </div>
+                                
+                                <div class="exercise-item" data-difficulty="medium">
+                                    <div class="exercise-info">
+                                        <h3>条件语句</h3>
+                                        <p>使用if-else语句实现条件判断</p>
+                                        <div class="exercise-meta">
+                                            <span class="difficulty medium">中等</span>
+                                            <span class="language">Python</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="startExercise('conditions')">开始练习</button>
+                                </div>
+                                
+                                <div class="exercise-item" data-difficulty="medium">
+                                    <div class="exercise-info">
+                                        <h3>循环结构</h3>
+                                        <p>掌握for和while循环的使用方法</p>
+                                        <div class="exercise-meta">
+                                            <span class="difficulty medium">中等</span>
+                                            <span class="language">Python</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="startExercise('loops')">开始练习</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="algorithm-practice" class="practice-category">
+                            <div class="exercise-list">
+                                <div class="exercise-item" data-difficulty="medium">
+                                    <div class="exercise-info">
+                                        <h3>数组排序</h3>
+                                        <p>实现冒泡排序算法</p>
+                                        <div class="exercise-meta">
+                                            <span class="difficulty medium">中等</span>
+                                            <span class="language">Python</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="startExercise('bubble-sort')">开始练习</button>
+                                </div>
+                                
+                                <div class="exercise-item" data-difficulty="hard">
+                                    <div class="exercise-info">
+                                        <h3>二分查找</h3>
+                                        <p>在有序数组中快速查找目标元素</p>
+                                        <div class="exercise-meta">
+                                            <span class="difficulty hard">困难</span>
+                                            <span class="language">Python</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="startExercise('binary-search')">开始练习</button>
+                                </div>
+                                
+                                <div class="exercise-item" data-difficulty="hard">
+                                    <div class="exercise-info">
+                                        <h3>递归算法</h3>
+                                        <p>使用递归计算斐波那契数列</p>
+                                        <div class="exercise-meta">
+                                            <span class="difficulty hard">困难</span>
+                                            <span class="language">Python</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="startExercise('fibonacci')">开始练习</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="project-practice" class="practice-category">
+                            <div class="exercise-list">
+                                <div class="exercise-item" data-difficulty="medium">
+                                    <div class="exercise-info">
+                                        <h3>计算器程序</h3>
+                                        <p>创建一个简单的命令行计算器</p>
+                                        <div class="exercise-meta">
+                                            <span class="difficulty medium">中等</span>
+                                            <span class="language">Python</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="startExercise('calculator')">开始练习</button>
+                                </div>
+                                
+                                <div class="exercise-item" data-difficulty="hard">
+                                    <div class="exercise-info">
+                                        <h3>学生管理系统</h3>
+                                        <p>设计一个简单的学生信息管理系统</p>
+                                        <div class="exercise-meta">
+                                            <span class="difficulty hard">困难</span>
+                                            <span class="language">Python</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="startExercise('student-system')">开始练习</button>
+                                </div>
+                                
+                                <div class="exercise-item" data-difficulty="hard">
+                                    <div class="exercise-info">
+                                        <h3>网页爬虫</h3>
+                                        <p>编写一个简单的网页数据爬取程序</p>
+                                        <div class="exercise-meta">
+                                            <span class="difficulty hard">困难</span>
+                                            <span class="language">Python</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" onclick="startExercise('web-crawler')">开始练习</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 作业管理模块 -->
+        <section id="homework" class="content-section">
+            <div class="section-header">
+                <h1>作业管理</h1>
+                <p>高效管理学习作业，跟踪学习进度</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card" data-feature="submit">
+                    <div class="feature-icon">
+                        <i class="fas fa-upload"></i>
+                    </div>
+                    <h3>作业提交</h3>
+                    <p>便捷的作业提交系统，支持多种文件格式</p>
+                    <button class="btn btn-primary">提交作业</button>
+                </div>
+                <div class="feature-card" data-feature="review">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>作业批改</h3>
+                    <p>智能批改系统，快速获得学习反馈</p>
+                    <button class="btn btn-primary">查看批改</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 个人中心模块 -->
+        <section id="profile" class="content-section">
+            <div class="section-header">
+                <h1>个人中心</h1>
+                <p>管理个人信息，跟踪学习成长</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card" data-feature="progress">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>学习进度</h3>
+                    <p>可视化展示学习进度和成就</p>
+                    <button class="btn btn-primary">查看进度</button>
+                </div>
+                <div class="feature-card" data-feature="settings">
+                    <div class="feature-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>个人设置</h3>
+                    <p>自定义个人信息和学习偏好</p>
+                    <button class="btn btn-primary">设置</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 学习进度页面 -->
+    <section id="learning-progress" class="content-section" style="display: none;">
+        <div class="section-header">
+            <h1>学习进度</h1>
+            <p>查看您的学习成果和进度统计</p>
+        </div>
+        
+        <div class="progress-dashboard">
+            <!-- 总体进度概览 -->
+            <div class="progress-overview">
+                <div class="progress-card">
+                    <div class="progress-icon">📚</div>
+                    <div class="progress-info">
+                        <h3>已完成课程</h3>
+                        <div class="progress-number">8</div>
+                        <div class="progress-total">/ 15 门课程</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 53%"></div>
+                    </div>
+                </div>
+                
+                <div class="progress-card">
+                    <div class="progress-icon">💻</div>
+                    <div class="progress-info">
+                        <h3>练习完成</h3>
+                        <div class="progress-number">24</div>
+                        <div class="progress-total">/ 50 个练习</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 48%"></div>
+                    </div>
+                </div>
+                
+                <div class="progress-card">
+                    <div class="progress-icon">🏆</div>
+                    <div class="progress-info">
+                        <h3>获得成就</h3>
+                        <div class="progress-number">12</div>
+                        <div class="progress-total">/ 30 个成就</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 40%"></div>
+                    </div>
+                </div>
+                
+                <div class="progress-card">
+                    <div class="progress-icon">⏱️</div>
+                    <div class="progress-info">
+                        <h3>学习时长</h3>
+                        <div class="progress-number">45</div>
+                        <div class="progress-total">小时</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 详细进度 -->
+            <div class="progress-details">
+                <div class="progress-section">
+                    <h2>课程进度</h2>
+                    <div class="course-progress-list">
+                        <div class="course-progress-item">
+                            <div class="course-info">
+                                <h4>Python基础</h4>
+                                <span class="course-status completed">已完成</span>
+                            </div>
+                            <div class="course-progress-bar">
+                                <div class="progress-fill" style="width: 100%"></div>
+                            </div>
+                            <span class="progress-text">100%</span>
+                        </div>
+                        
+                        <div class="course-progress-item">
+                            <div class="course-info">
+                                <h4>JavaScript编程</h4>
+                                <span class="course-status in-progress">进行中</span>
+                            </div>
+                            <div class="course-progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <span class="progress-text">65%</span>
+                        </div>
+                        
+                        <div class="course-progress-item">
+                            <div class="course-info">
+                                <h4>C++编程</h4>
+                                <span class="course-status not-started">未开始</span>
+                            </div>
+                            <div class="course-progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">0%</span>
+                        </div>
+                        
+                        <div class="course-progress-item">
+                            <div class="course-info">
+                                <h4>数据结构与算法</h4>
+                                <span class="course-status not-started">未开始</span>
+                            </div>
+                            <div class="course-progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="progress-section">
+                    <h2>最近成就</h2>
+                    <div class="achievements-list">
+                        <div class="achievement-item">
+                            <div class="achievement-icon">🎯</div>
+                            <div class="achievement-info">
+                                <h4>初学者</h4>
+                                <p>完成第一个编程练习</p>
+                                <span class="achievement-date">2024-01-15</span>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-item">
+                            <div class="achievement-icon">🔥</div>
+                            <div class="achievement-info">
+                                <h4>连续学习</h4>
+                                <p>连续7天完成学习任务</p>
+                                <span class="achievement-date">2024-01-20</span>
+                            </div>
+                        </div>
+                        
+                        <div class="achievement-item">
+                            <div class="achievement-icon">💡</div>
+                            <div class="achievement-info">
+                                <h4>问题解决者</h4>
+                                <p>成功解决10个编程问题</p>
+                                <span class="achievement-date">2024-01-22</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 个人设置页面 -->
+    <section id="personal-settings" class="content-section" style="display: none;">
+        <div class="section-header">
+            <h1>个人设置</h1>
+            <p>管理您的个人信息和学习偏好</p>
+        </div>
+        
+        <div class="settings-container">
+            <div class="settings-sidebar">
+                <div class="settings-nav">
+                    <button class="settings-nav-btn active" data-setting="profile">个人信息</button>
+                    <button class="settings-nav-btn" data-setting="preferences">学习偏好</button>
+                    <button class="settings-nav-btn" data-setting="notifications">通知设置</button>
+                    <button class="settings-nav-btn" data-setting="privacy">隐私设置</button>
+                    <button class="settings-nav-btn" data-setting="account">账户管理</button>
+                </div>
+            </div>
+            
+            <div class="settings-content">
+                <!-- 个人信息设置 -->
+                <div id="profile-settings" class="settings-panel active">
+                    <h2>个人信息</h2>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label for="userName">姓名</label>
+                            <input type="text" id="userName" value="张三" placeholder="请输入您的姓名">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userEmail">邮箱</label>
+                            <input type="email" id="userEmail" value="zhangsan@example.com" placeholder="请输入您的邮箱">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userPhone">手机号</label>
+                            <input type="tel" id="userPhone" value="138****8888" placeholder="请输入您的手机号">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userBio">个人简介</label>
+                            <textarea id="userBio" rows="4" placeholder="介绍一下您自己...">热爱编程的学习者，正在学习Python和JavaScript</textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="userAvatar">头像</label>
+                            <div class="avatar-upload">
+                                <div class="avatar-preview">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiM2NjdlZWEiLz4KPHN2ZyB4PSIyMCIgeT0iMjAiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAxMmMyLjIxIDAgNC0xLjc5IDQtNHMtMS43OS00LTQtNC00IDEuNzktNCA0IDEuNzkgNCA0IDR6bTAgMmMtMi42NyAwLTggMS4zNC04IDR2MmgxNnYtMmMwLTIuNjYtNS4zMy00LTgtNHoiLz4KPHN2Zz4KPC9zdmc+" alt="用户头像">
+                                </div>
+                                <button type="button" class="btn btn-secondary">更换头像</button>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">保存更改</button>
+                    </form>
+                </div>
+                
+                <!-- 学习偏好设置 -->
+                <div id="preferences-settings" class="settings-panel">
+                    <h2>学习偏好</h2>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label for="learningLanguage">首选编程语言</label>
+                            <select id="learningLanguage">
+                                <option value="python">Python</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="java">Java</option>
+                                <option value="cpp">C++</option>
+                                <option value="scratch">Scratch</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="difficultyLevel">难度偏好</label>
+                            <select id="difficultyLevel">
+                                <option value="beginner">初学者</option>
+                                <option value="intermediate" selected>中级</option>
+                                <option value="advanced">高级</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="dailyGoal">每日学习目标（分钟）</label>
+                            <input type="number" id="dailyGoal" value="60" min="15" max="480">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>学习提醒</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> 每日学习提醒
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> 作业截止提醒
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> 新课程推荐
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">保存设置</button>
+                    </form>
+                </div>
+                
+                <!-- 通知设置 -->
+                <div id="notifications-settings" class="settings-panel">
+                    <h2>通知设置</h2>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label>邮件通知</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> 学习进度报告
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> 新功能通知
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> 营销邮件
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>推送通知</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> 浏览器推送
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> 手机推送
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">保存设置</button>
+                    </form>
+                </div>
+                
+                <!-- 隐私设置 -->
+                <div id="privacy-settings" class="settings-panel">
+                    <h2>隐私设置</h2>
+                    <form class="settings-form">
+                        <div class="form-group">
+                            <label>个人资料可见性</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="profileVisibility" value="public"> 公开
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="profileVisibility" value="friends" checked> 仅好友
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="profileVisibility" value="private"> 私密
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>学习数据</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked> 允许匿名数据分析
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox"> 参与产品改进计划
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">保存设置</button>
+                    </form>
+                </div>
+                
+                <!-- 账户管理 -->
+                <div id="account-settings" class="settings-panel">
+                    <h2>账户管理</h2>
+                    <div class="settings-form">
+                        <div class="form-group">
+                            <label>修改密码</label>
+                            <button type="button" class="btn btn-secondary" onclick="showChangePasswordModal()">更改密码</button>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>数据导出</label>
+                            <button type="button" class="btn btn-secondary" onclick="exportUserData()">导出我的数据</button>
+                        </div>
+                        
+                        <div class="form-group danger-zone">
+                            <label>危险操作</label>
+                            <button type="button" class="btn btn-danger" onclick="confirmDeleteAccount()">删除账户</button>
+                            <p class="warning-text">⚠️ 此操作不可逆，将永久删除您的所有数据</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 登录模态框 -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>登录</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">邮箱:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">密码:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">登录</button>
+                <p class="auth-switch">
+                    还没有账号？ <a href="#" id="showRegister">立即注册</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- 注册模态框 -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>注册</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="regEmail">邮箱:</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">密码:</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="displayName">姓名:</label>
+                    <input type="text" id="displayName" required>
+                </div>
+                <button type="submit" class="btn btn-primary">注册</button>
+                <p class="auth-switch">
+                    已有账号？ <a href="#" id="showLogin">立即登录</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+    <!-- 自定义脚本 -->
+    <script type="module" src="firebase-config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.26.1/min/vs/loader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
