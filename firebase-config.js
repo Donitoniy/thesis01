@@ -7,13 +7,13 @@ import { getAI, getGenerativeModel, GoogleAIBackend } from 'https://www.gstatic.
 
 // 您的Firebase项目配置
 const firebaseConfig = {
-  apiKey: "AIzaSyBIGh8tAUex8jBjR9dWRCKCQdEWbUugoj0",
-  authDomain: "smart-programming123.firebaseapp.com",
-  projectId: "smart-programming123",
-  storageBucket: "smart-programming123.firebasestorage.app",
-  messagingSenderId: "917550454228",
-  appId: "1:917550454228:web:567e7f5450c344c9933241",
-  measurementId: "G-YH37BVKPKJ"
+  apiKey: "AIzaSyDB6TQEPF-yUHPqlKQ2nl-jadQGuOTE0-U",
+  authDomain: "thesis-7e2d7.firebaseapp.com",
+  projectId: "thesis-7e2d7",
+  storageBucket: "thesis-7e2d7.firebasestorage.app",
+  messagingSenderId: "444500893271",
+  appId: "1:444500893271:web:f5f83ebaa0039980070d12",
+  measurementId: "G-KRH7Q7GCX6"
 };
 
 // 初始化 Firebase

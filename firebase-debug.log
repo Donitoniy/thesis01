@@ -1,40 +1,304 @@
-[debug] [2025-11-02T04:34:45.701Z] ----------------------------------------------------------------------
-[debug] [2025-11-02T04:34:45.703Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\ode-global\node_modules\firebase-tools\lib\bin\firebase.js login --debug
-[debug] [2025-11-02T04:34:45.703Z] CLI Version:   12.9.1
-[debug] [2025-11-02T04:34:45.703Z] Platform:      win32
-[debug] [2025-11-02T04:34:45.703Z] Node Version:  v16.18.0
-[debug] [2025-11-02T04:34:45.704Z] Time:          Sun Nov 02 2025 12:34:45 GMT+0800 (中国标准时间)
-[debug] [2025-11-02T04:34:45.704Z] ----------------------------------------------------------------------
+[debug] [2025-11-04T15:27:08.131Z] ----------------------------------------------------------------------
+[debug] [2025-11-04T15:27:08.133Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Toni\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only hosting
+[debug] [2025-11-04T15:27:08.134Z] CLI Version:   14.23.0
+[debug] [2025-11-04T15:27:08.134Z] Platform:      win32
+[debug] [2025-11-04T15:27:08.134Z] Node Version:  v24.11.0
+[debug] [2025-11-04T15:27:08.134Z] Time:          Tue Nov 04 2025 23:27:08 GMT+0800 (China Standard Time)
+[debug] [2025-11-04T15:27:08.134Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-11-02T04:34:45.706Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+[debug] [2025-11-04T15:27:08.392Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-04T15:27:08.393Z] > authorizing via signed-in user (tonikaukoniemi86@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2025-11-04T15:27:08.411Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-04T15:27:08.411Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-04T15:27:08.411Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-11-04T15:27:08.417Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T15:27:08.418Z] [hub] writing locator at C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T15:27:08.435Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:27:08.435Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:27:08.436Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites 
+[debug] [2025-11-04T15:27:11.050Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites 200
+[debug] [2025-11-04T15:27:11.050Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites {"sites":[{"name":"projects/thesis-7e2d7/sites/thesis-7e2d7","defaultUrl":"https://thesis-7e2d7.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-11-04T15:27:11.050Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:27:11.050Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:27:11.050Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config [none]
+[debug] [2025-11-04T15:27:12.168Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config 200
+[debug] [2025-11-04T15:27:12.168Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config {"projectId":"thesis-7e2d7","appId":"1:444500893271:web:f5f83ebaa0039980070d12","storageBucket":"thesis-7e2d7.firebasestorage.app","apiKey":"AIzaSyDB6TQEPF-yUHPqlKQ2nl-jadQGuOTE0-U","authDomain":"thesis-7e2d7.firebaseapp.com","messagingSenderId":"444500893271","measurementId":"G-KRH7Q7GCX6","projectNumber":"444500893271","version":"2"}
+[debug] [2025-11-04T15:27:12.172Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:27:12.172Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:27:12.172Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 [none]
+[debug] [2025-11-04T15:27:12.435Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 200
+[debug] [2025-11-04T15:27:12.435Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 {"projectId":"thesis-7e2d7","projectNumber":"444500893271","displayName":"thesis","name":"projects/thesis-7e2d7","resources":{"hostingSite":"thesis-7e2d7"},"state":"ACTIVE","etag":"1_077b1e1d-6e9e-499a-888b-45febab6033d"}
+[info] +  hosting[thesis-7e2d7]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting because none of the running emulators have a UI component. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting because none of the running emulators have a UI component."}}
+[debug] [2025-11-04T15:27:12.489Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] "GET /firebase-config.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] \"GET /firebase-config.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] "GET /styles.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] \"GET /styles.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] "GET /script.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] \"GET /script.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:28:53 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:28:53 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[debug] [2025-11-04T15:29:10.755Z] Received signal SIGINT (Ctrl-C) 1
+[info]  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2025-11-04T15:29:10.759Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[debug] [2025-11-04T15:29:10.763Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2025-11-04T15:29:11.039Z] Received signal SIGINT (Ctrl-C) 2
+[info]  
+[debug] [2025-11-04T15:29:11.039Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 2 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
 [info] 
-[info] Visit this URL on this device to log in:
-[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=11619568&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:12.068Z] Received signal SIGINT (Ctrl-C) 3
+[info]  
+[debug] [2025-11-04T15:29:12.069Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 3 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
 [info] 
-[info] Waiting for authentication...
-[debug] [2025-11-02T04:34:46.434Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2025-11-02T04:34:46.434Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
-[debug] [2025-11-02T04:35:33.931Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
-[debug] [2025-11-02T04:35:33.932Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
-[debug] [2025-11-02T04:35:54.975Z] *** [apiv2] error from fetch(https://accounts.google.com/o/oauth2/token, {"headers":{},"method":"POST","body":{"_overheadLength":543,"_valueLength":208,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------49ac5a8074852866cc289923","_events":{},"_eventsCount":1}}): FetchError: request to https://accounts.google.com/o/oauth2/token failed, reason: connect ETIMEDOUT 173.194.202.84:443
-[debug] [2025-11-02T04:35:54.976Z] Token Fetch Error: FirebaseError: Failed to make request to https://accounts.google.com/o/oauth2/token
-    at RetryOperation._fn (C:\Program Files\nodejs\ode-global\node_modules\firebase-tools\lib\apiv2.js:239:31)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
-[debug] [2025-11-02T04:35:54.981Z] >>> [apiv2][query] POST https://auth.firebase.tools/attest [none]
-[debug] [2025-11-02T04:35:54.981Z] >>> [apiv2][body] POST https://auth.firebase.tools/attest {"session_id":"ca624c84-3aec-4bc2-a0b4-b7d5b445dd3d"}
-[debug] [2025-11-02T04:36:05.329Z] *** [apiv2] error from fetch(https://auth.firebase.tools/attest, {"headers":{},"method":"POST","body":"{\"session_id\":\"ca624c84-3aec-4bc2-a0b4-b7d5b445dd3d\"}"}): FetchError: request to https://auth.firebase.tools/attest failed, reason: Client network socket disconnected before secure TLS connection was established
-[debug] [2025-11-02T04:36:05.527Z] FetchError: request to https://auth.firebase.tools/attest failed, reason: Client network socket disconnected before secure TLS connection was established
-    at ClientRequest.<anonymous> (C:\Program Files\nodejs\ode-global\node_modules\firebase-tools\node_modules\node-fetch\lib\index.js:1501:11)
-    at ClientRequest.emit (node:events:513:28)
-    at ClientRequest.emit (node:domain:489:12)
-    at TLSSocket.socketErrorListener (node:_http_client:494:9)
-    at TLSSocket.emit (node:events:513:28)
-    at TLSSocket.emit (node:domain:489:12)
-    at emitErrorNT (node:internal/streams/destroy:157:8)
-    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
-    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:13.374Z] Received signal SIGINT (Ctrl-C) 4
+[info]  
+[debug] [2025-11-04T15:29:13.375Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 4 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:13.791Z] Received signal SIGINT (Ctrl-C) 5
+[info]  
+[debug] [2025-11-04T15:29:13.792Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 5 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:14.158Z] Received signal SIGINT (Ctrl-C) 6
+[info]  
+[debug] [2025-11-04T15:29:14.159Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 6 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:17.009Z] Received signal SIGINT (Ctrl-C) 7
+[info]  
+[debug] [2025-11-04T15:29:17.012Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 7 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:17.342Z] Received signal SIGINT (Ctrl-C) 8
+[info]  
+[debug] [2025-11-04T15:29:17.343Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 8 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:17.626Z] Received signal SIGINT (Ctrl-C) 9
+[info]  
+[debug] [2025-11-04T15:29:17.627Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 9 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:17.908Z] Received signal SIGINT (Ctrl-C) 10
+[info]  
+[debug] [2025-11-04T15:29:17.908Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 10 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:18.139Z] Received signal SIGINT (Ctrl-C) 11
+[info]  
+[debug] [2025-11-04T15:29:18.140Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 11 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:18.381Z] Received signal SIGINT (Ctrl-C) 12
+[info]  
+[debug] [2025-11-04T15:29:18.383Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 12 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:18.615Z] Received signal SIGINT (Ctrl-C) 13
+[info]  
+[debug] [2025-11-04T15:29:18.616Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 13 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:18.864Z] Received signal SIGINT (Ctrl-C) 14
+[info]  
+[debug] [2025-11-04T15:29:18.865Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 14 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:19.092Z] Received signal SIGINT (Ctrl-C) 15
+[info]  
+[debug] [2025-11-04T15:29:19.092Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 15 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:19.342Z] Received signal SIGINT (Ctrl-C) 16
+[info]  
+[debug] [2025-11-04T15:29:19.344Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 16 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:19.575Z] Received signal SIGINT (Ctrl-C) 17
+[info]  
+[debug] [2025-11-04T15:29:19.576Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 17 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:20.390Z] Received signal SIGINT (Ctrl-C) 18
+[info]  
+[debug] [2025-11-04T15:29:20.392Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 18 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:20.767Z] Received signal SIGINT (Ctrl-C) 19
+[info]  
+[debug] [2025-11-04T15:29:20.767Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 19 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T15:29:20.789Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Toni\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:275:49)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
 [error] 
-[error] Error: Failed to make request to https://auth.firebase.tools/attest
+[error] Error: An unexpected error has occurred.
