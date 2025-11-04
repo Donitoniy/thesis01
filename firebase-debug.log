@@ -1,37 +1,37 @@
-[debug] [2025-11-04T15:27:08.131Z] ----------------------------------------------------------------------
-[debug] [2025-11-04T15:27:08.133Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Toni\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only hosting
-[debug] [2025-11-04T15:27:08.134Z] CLI Version:   14.23.0
-[debug] [2025-11-04T15:27:08.134Z] Platform:      win32
-[debug] [2025-11-04T15:27:08.134Z] Node Version:  v24.11.0
-[debug] [2025-11-04T15:27:08.134Z] Time:          Tue Nov 04 2025 23:27:08 GMT+0800 (China Standard Time)
-[debug] [2025-11-04T15:27:08.134Z] ----------------------------------------------------------------------
+[debug] [2025-11-04T15:37:44.926Z] ----------------------------------------------------------------------
+[debug] [2025-11-04T15:37:44.930Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Toni\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only hosting
+[debug] [2025-11-04T15:37:44.930Z] CLI Version:   14.23.0
+[debug] [2025-11-04T15:37:44.931Z] Platform:      win32
+[debug] [2025-11-04T15:37:44.931Z] Node Version:  v24.11.0
+[debug] [2025-11-04T15:37:44.931Z] Time:          Tue Nov 04 2025 23:37:44 GMT+0800 (China Standard Time)
+[debug] [2025-11-04T15:37:44.931Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-11-04T15:27:08.392Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-11-04T15:27:08.393Z] > authorizing via signed-in user (tonikaukoniemi86@gmail.com)
+[debug] [2025-11-04T15:37:45.188Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-04T15:37:45.188Z] > authorizing via signed-in user (tonikaukoniemi86@gmail.com)
 [info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
-[debug] [2025-11-04T15:27:08.411Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-11-04T15:27:08.411Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2025-11-04T15:27:08.411Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2025-11-04T15:27:08.417Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
-[debug] [2025-11-04T15:27:08.418Z] [hub] writing locator at C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
-[debug] [2025-11-04T15:27:08.435Z] Checked if tokens are valid: true, expires at: 1762273518860
-[debug] [2025-11-04T15:27:08.435Z] Checked if tokens are valid: true, expires at: 1762273518860
-[debug] [2025-11-04T15:27:08.436Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites 
-[debug] [2025-11-04T15:27:11.050Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites 200
-[debug] [2025-11-04T15:27:11.050Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites {"sites":[{"name":"projects/thesis-7e2d7/sites/thesis-7e2d7","defaultUrl":"https://thesis-7e2d7.web.app","type":"DEFAULT_SITE"}]}
-[debug] [2025-11-04T15:27:11.050Z] Checked if tokens are valid: true, expires at: 1762273518860
-[debug] [2025-11-04T15:27:11.050Z] Checked if tokens are valid: true, expires at: 1762273518860
-[debug] [2025-11-04T15:27:11.050Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config [none]
-[debug] [2025-11-04T15:27:12.168Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config 200
-[debug] [2025-11-04T15:27:12.168Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config {"projectId":"thesis-7e2d7","appId":"1:444500893271:web:f5f83ebaa0039980070d12","storageBucket":"thesis-7e2d7.firebasestorage.app","apiKey":"AIzaSyDB6TQEPF-yUHPqlKQ2nl-jadQGuOTE0-U","authDomain":"thesis-7e2d7.firebaseapp.com","messagingSenderId":"444500893271","measurementId":"G-KRH7Q7GCX6","projectNumber":"444500893271","version":"2"}
-[debug] [2025-11-04T15:27:12.172Z] Checked if tokens are valid: true, expires at: 1762273518860
-[debug] [2025-11-04T15:27:12.172Z] Checked if tokens are valid: true, expires at: 1762273518860
-[debug] [2025-11-04T15:27:12.172Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 [none]
-[debug] [2025-11-04T15:27:12.435Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 200
-[debug] [2025-11-04T15:27:12.435Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 {"projectId":"thesis-7e2d7","projectNumber":"444500893271","displayName":"thesis","name":"projects/thesis-7e2d7","resources":{"hostingSite":"thesis-7e2d7"},"state":"ACTIVE","etag":"1_077b1e1d-6e9e-499a-888b-45febab6033d"}
+[debug] [2025-11-04T15:37:45.199Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-04T15:37:45.199Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-04T15:37:45.199Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-11-04T15:37:45.205Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T15:37:45.205Z] [hub] writing locator at C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T15:37:45.229Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:37:45.229Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:37:45.230Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites 
+[debug] [2025-11-04T15:37:46.465Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites 200
+[debug] [2025-11-04T15:37:46.465Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites {"sites":[{"name":"projects/thesis-7e2d7/sites/thesis-7e2d7","defaultUrl":"https://thesis-7e2d7.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-11-04T15:37:46.465Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:37:46.465Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:37:46.465Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config [none]
+[debug] [2025-11-04T15:37:47.283Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config 200
+[debug] [2025-11-04T15:37:47.283Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config {"projectId":"thesis-7e2d7","appId":"1:444500893271:web:f5f83ebaa0039980070d12","storageBucket":"thesis-7e2d7.firebasestorage.app","apiKey":"AIzaSyDB6TQEPF-yUHPqlKQ2nl-jadQGuOTE0-U","authDomain":"thesis-7e2d7.firebaseapp.com","messagingSenderId":"444500893271","measurementId":"G-KRH7Q7GCX6","projectNumber":"444500893271","version":"2"}
+[debug] [2025-11-04T15:37:47.288Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:37:47.289Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T15:37:47.289Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 [none]
+[debug] [2025-11-04T15:37:47.559Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 200
+[debug] [2025-11-04T15:37:47.559Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 {"projectId":"thesis-7e2d7","projectNumber":"444500893271","displayName":"thesis","name":"projects/thesis-7e2d7","resources":{"hostingSite":"thesis-7e2d7"},"state":"ACTIVE","etag":"1_077b1e1d-6e9e-499a-888b-45febab6033d"}
 [info] +  hosting[thesis-7e2d7]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
 [warn] !  emulators: The Emulator UI is not starting because none of the running emulators have a UI component. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting because none of the running emulators have a UI component."}}
-[debug] [2025-11-04T15:27:12.489Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2025-11-04T15:37:47.590Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
 │ ✔  All emulators ready! It is now safe to connect your app. │
@@ -47,24 +47,45 @@
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
-[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] "GET /firebase-config.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] \"GET /firebase-config.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] "GET /styles.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] \"GET /styles.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] "GET /script.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:27:34 +0000] \"GET /script.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
-[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:28:53 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:28:53 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
-[debug] [2025-11-04T15:29:10.755Z] Received signal SIGINT (Ctrl-C) 1
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:37:49 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:37:49 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:37:49 +0000] "GET /styles.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:37:49 +0000] \"GET /styles.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:37:49 +0000] "GET /firebase-config.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:37:49 +0000] \"GET /firebase-config.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:37:49 +0000] "GET /script.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:37:49 +0000] \"GET /script.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:37:53 +0000] "GET /favicon.ico HTTP/1.1" 304 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:37:53 +0000] \"GET /favicon.ico HTTP/1.1\" 304 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:39:50 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:39:50 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:45:58 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:45:58 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:45:59 +0000] "GET /styles.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:45:59 +0000] \"GET /styles.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:45:59 +0000] "GET /firebase-config.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:45:59 +0000] \"GET /firebase-config.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:45:59 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:45:59 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:45:59 +0000] "GET /script.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:45:59 +0000] \"GET /script.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:46:00 +0000] "GET /favicon.ico HTTP/1.1" 304 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:46:00 +0000] \"GET /favicon.ico HTTP/1.1\" 304 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:46:08 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:46:08 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:46:08 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:46:08 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:48:59 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:48:59 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:48:59 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:48:59 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:53:35 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:53:35 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:53:35 +0000] "GET /styles.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:53:35 +0000] \"GET /styles.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:53:35 +0000] "GET /firebase-config.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:53:35 +0000] \"GET /firebase-config.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:53:35 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:53:35 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:53:35 +0000] "GET /script.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:53:35 +0000] \"GET /script.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:15:53:36 +0000] "GET /favicon.ico HTTP/1.1" 304 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:15:53:36 +0000] \"GET /favicon.ico HTTP/1.1\" 304 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:01:05 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:01:05 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:01:05 +0000] "GET /firebase-config.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:01:05 +0000] \"GET /firebase-config.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:01:05 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:01:05 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:01:06 +0000] "GET /favicon.ico HTTP/1.1" 304 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:01:06 +0000] \"GET /favicon.ico HTTP/1.1\" 304 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[debug] [2025-11-04T16:01:14.515Z] Received signal SIGINT (Ctrl-C) 1
 [info]  
 [info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
 [info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
 [info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
 [info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
 [info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
-[debug] [2025-11-04T15:29:10.759Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T16:01:14.521Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
 [info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
-[debug] [2025-11-04T15:29:10.763Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
-[debug] [2025-11-04T15:29:11.039Z] Received signal SIGINT (Ctrl-C) 2
+[debug] [2025-11-04T16:01:14.528Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2025-11-04T16:01:15.730Z] Received signal SIGINT (Ctrl-C) 2
 [info]  
-[debug] [2025-11-04T15:29:11.039Z] Skipping clean onExit() and cleanShutdown()
+[debug] [2025-11-04T16:01:15.731Z] Skipping clean onExit() and cleanShutdown()
 [warn] !  emulators: Received SIGINT (Ctrl-C) 2 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
 [info] 
 ┌──────────┬───────────┬─────┐
@@ -75,9 +96,9 @@ To force them to exit run:
 
 [info] TASKKILL  /T
 
-[debug] [2025-11-04T15:29:12.068Z] Received signal SIGINT (Ctrl-C) 3
+[debug] [2025-11-04T16:01:17.807Z] Received signal SIGINT (Ctrl-C) 3
 [info]  
-[debug] [2025-11-04T15:29:12.069Z] Skipping clean onExit() and cleanShutdown()
+[debug] [2025-11-04T16:01:17.808Z] Skipping clean onExit() and cleanShutdown()
 [warn] !  emulators: Received SIGINT (Ctrl-C) 3 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
 [info] 
 ┌──────────┬───────────┬─────┐
@@ -88,9 +109,75 @@ To force them to exit run:
 
 [info] TASKKILL  /T
 
-[debug] [2025-11-04T15:29:13.374Z] Received signal SIGINT (Ctrl-C) 4
+[debug] [2025-11-04T16:01:24.576Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Toni\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:275:49)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-04T16:02:04.976Z] ----------------------------------------------------------------------
+[debug] [2025-11-04T16:02:04.979Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Toni\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only hosting
+[debug] [2025-11-04T16:02:04.979Z] CLI Version:   14.23.0
+[debug] [2025-11-04T16:02:04.979Z] Platform:      win32
+[debug] [2025-11-04T16:02:04.979Z] Node Version:  v24.11.0
+[debug] [2025-11-04T16:02:04.980Z] Time:          Wed Nov 05 2025 00:02:04 GMT+0800 (China Standard Time)
+[debug] [2025-11-04T16:02:04.980Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-04T16:02:05.362Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-04T16:02:05.362Z] > authorizing via signed-in user (tonikaukoniemi86@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2025-11-04T16:02:05.379Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-04T16:02:05.380Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-04T16:02:05.380Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-11-04T16:02:05.390Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T16:02:05.390Z] [hub] writing locator at C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T16:02:05.415Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:02:05.416Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:02:05.417Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites 
+[debug] [2025-11-04T16:02:19.974Z] *** [apiv2] error from fetch(https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites, {"headers":{},"method":"GET"}): FetchError: request to https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2025-11-04T16:02:19.975Z] Failed to list hosting sites
+[debug] Failed to make request to https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites
+[debug] [2025-11-04T16:02:19.976Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:02:19.976Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:02:19.976Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config [none]
+[debug] [2025-11-04T16:02:32.658Z] Received signal SIGINT (Ctrl-C) 1
 [info]  
-[debug] [2025-11-04T15:29:13.375Z] Skipping clean onExit() and cleanShutdown()
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2025-11-04T16:02:32.663Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T16:02:32.668Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2025-11-04T16:02:40.022Z] Received signal SIGINT (Ctrl-C) 2
+[info]  
+[debug] [2025-11-04T16:02:40.022Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 2 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T16:02:41.326Z] Received signal SIGINT (Ctrl-C) 3
+[info]  
+[debug] [2025-11-04T16:02:41.326Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 3 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] 
+┌──────────┬───────────┬─────┐
+│ Emulator │ Host:Port │ PID │
+└──────────┴───────────┴─────┘
+
+To force them to exit run:
+
+[info] TASKKILL  /T
+
+[debug] [2025-11-04T16:02:41.747Z] Received signal SIGINT (Ctrl-C) 4
+[info]  
+[debug] [2025-11-04T16:02:41.747Z] Skipping clean onExit() and cleanShutdown()
 [warn] !  emulators: Received SIGINT (Ctrl-C) 4 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
 [info] 
 ┌──────────┬───────────┬─────┐
@@ -101,9 +188,9 @@ To force them to exit run:
 
 [info] TASKKILL  /T
 
-[debug] [2025-11-04T15:29:13.791Z] Received signal SIGINT (Ctrl-C) 5
+[debug] [2025-11-04T16:02:42.139Z] Received signal SIGINT (Ctrl-C) 5
 [info]  
-[debug] [2025-11-04T15:29:13.792Z] Skipping clean onExit() and cleanShutdown()
+[debug] [2025-11-04T16:02:42.140Z] Skipping clean onExit() and cleanShutdown()
 [warn] !  emulators: Received SIGINT (Ctrl-C) 5 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
 [info] 
 ┌──────────┬───────────┬─────┐
@@ -114,10 +201,84 @@ To force them to exit run:
 
 [info] TASKKILL  /T
 
-[debug] [2025-11-04T15:29:14.158Z] Received signal SIGINT (Ctrl-C) 6
+[debug] [2025-11-04T16:02:42.695Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Toni\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:275:49)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-04T16:02:50.340Z] ----------------------------------------------------------------------
+[debug] [2025-11-04T16:02:50.343Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Toni\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only hosting
+[debug] [2025-11-04T16:02:50.343Z] CLI Version:   14.23.0
+[debug] [2025-11-04T16:02:50.343Z] Platform:      win32
+[debug] [2025-11-04T16:02:50.344Z] Node Version:  v24.11.0
+[debug] [2025-11-04T16:02:50.344Z] Time:          Wed Nov 05 2025 00:02:50 GMT+0800 (China Standard Time)
+[debug] [2025-11-04T16:02:50.344Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-04T16:02:50.565Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-04T16:02:50.565Z] > authorizing via signed-in user (tonikaukoniemi86@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2025-11-04T16:02:50.582Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-04T16:02:50.582Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-04T16:02:50.582Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-11-04T16:02:50.590Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T16:02:50.590Z] [hub] writing locator at C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T16:02:50.612Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:02:50.612Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:02:50.613Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites 
+[debug] [2025-11-04T16:02:51.590Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites 200
+[debug] [2025-11-04T16:02:51.590Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites {"sites":[{"name":"projects/thesis-7e2d7/sites/thesis-7e2d7","defaultUrl":"https://thesis-7e2d7.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-11-04T16:02:51.590Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:02:51.590Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:02:51.591Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config [none]
+[debug] [2025-11-04T16:02:52.762Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config 200
+[debug] [2025-11-04T16:02:52.763Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config {"projectId":"thesis-7e2d7","appId":"1:444500893271:web:f5f83ebaa0039980070d12","storageBucket":"thesis-7e2d7.firebasestorage.app","apiKey":"AIzaSyDB6TQEPF-yUHPqlKQ2nl-jadQGuOTE0-U","authDomain":"thesis-7e2d7.firebaseapp.com","messagingSenderId":"444500893271","measurementId":"G-KRH7Q7GCX6","projectNumber":"444500893271","version":"2"}
+[debug] [2025-11-04T16:02:52.769Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:02:52.769Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:02:52.770Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 [none]
+[debug] [2025-11-04T16:02:53.053Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 200
+[debug] [2025-11-04T16:02:53.053Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 {"projectId":"thesis-7e2d7","projectNumber":"444500893271","displayName":"thesis","name":"projects/thesis-7e2d7","resources":{"hostingSite":"thesis-7e2d7"},"state":"ACTIVE","etag":"1_077b1e1d-6e9e-499a-888b-45febab6033d"}
+[info] +  hosting[thesis-7e2d7]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting because none of the running emulators have a UI component. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting because none of the running emulators have a UI component."}}
+[debug] [2025-11-04T16:02:53.075Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:03:04 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:03:04 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:03:04 +0000] "GET /styles.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:03:04 +0000] \"GET /styles.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:03:04 +0000] "GET /script.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:03:04 +0000] \"GET /script.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:03:11 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:03:11 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:05:01 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:05:01 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:05:01 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:05:01 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:05:17 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:05:17 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:06:04 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:06:04 +0000] \"GET / HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [04/Nov/2025:16:06:04 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [04/Nov/2025:16:06:04 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36\""}}
+[debug] [2025-11-04T16:07:32.864Z] Received signal SIGINT (Ctrl-C) 1
 [info]  
-[debug] [2025-11-04T15:29:14.159Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 6 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2025-11-04T16:07:32.881Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[debug] [2025-11-04T16:07:32.897Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2025-11-04T16:07:34.002Z] Received signal SIGINT (Ctrl-C) 2
+[info]  
+[debug] [2025-11-04T16:07:34.003Z] Skipping clean onExit() and cleanShutdown()
+[warn] !  emulators: Received SIGINT (Ctrl-C) 2 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
 [info] 
 ┌──────────┬───────────┬─────┐
 │ Emulator │ Host:Port │ PID │
@@ -127,176 +288,73 @@ To force them to exit run:
 
 [info] TASKKILL  /T
 
-[debug] [2025-11-04T15:29:17.009Z] Received signal SIGINT (Ctrl-C) 7
+[debug] [2025-11-04T16:07:42.929Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Toni\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:275:49)
+    at listOnTimeout (node:internal/timers:608:17)
+    at process.processTimers (node:internal/timers:543:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-11-04T16:08:03.750Z] ----------------------------------------------------------------------
+[debug] [2025-11-04T16:08:03.753Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Toni\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only hosting
+[debug] [2025-11-04T16:08:03.753Z] CLI Version:   14.23.0
+[debug] [2025-11-04T16:08:03.753Z] Platform:      win32
+[debug] [2025-11-04T16:08:03.753Z] Node Version:  v24.11.0
+[debug] [2025-11-04T16:08:03.753Z] Time:          Wed Nov 05 2025 00:08:03 GMT+0800 (China Standard Time)
+[debug] [2025-11-04T16:08:03.753Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-11-04T16:08:04.081Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-04T16:08:04.082Z] > authorizing via signed-in user (tonikaukoniemi86@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2025-11-04T16:08:04.094Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-04T16:08:04.094Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2025-11-04T16:08:04.095Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2025-11-04T16:08:04.100Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T16:08:04.100Z] [hub] writing locator at C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T16:08:04.117Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:08:04.117Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:08:04.118Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites 
+[debug] [2025-11-04T16:08:27.940Z] *** [apiv2] error from fetch(https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites, {"headers":{},"method":"GET"}): FetchError: request to https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites failed, reason: 
+[debug] [2025-11-04T16:08:27.941Z] Failed to list hosting sites
+[debug] Failed to make request to https://firebasehosting.googleapis.com/v1beta1/projects/thesis-7e2d7/sites
+[debug] [2025-11-04T16:08:27.942Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:08:27.942Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:08:27.942Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config [none]
+[debug] [2025-11-04T16:08:45.032Z] Received signal SIGINT (Ctrl-C) 1
 [info]  
-[debug] [2025-11-04T15:29:17.012Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 7 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  hosting: Stopping Hosting Emulator {"metadata":{"emulator":{"name":"hosting"},"message":"Stopping Hosting Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2025-11-04T16:08:45.035Z] Emulator locator file path: C:\Users\Toni\AppData\Local\Temp\hub-thesis-7e2d7.json
+[debug] [2025-11-04T16:08:45.038Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
+[debug] [2025-11-04T16:08:51.517Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config, {"headers":{},"method":"GET"}): FetchError: request to https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config failed, reason: 
+[debug] [2025-11-04T16:08:51.517Z] fetchWebSetup error: FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7/webApps/-/config
+[warn] !  hosting: Using web app configuration from cache. 
+[debug] [2025-11-04T16:08:51.523Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:08:51.523Z] Checked if tokens are valid: true, expires at: 1762273518860
+[debug] [2025-11-04T16:08:51.524Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 [none]
+[debug] [2025-11-04T16:08:52.697Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 200
+[debug] [2025-11-04T16:08:52.697Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/thesis-7e2d7 {"projectId":"thesis-7e2d7","projectNumber":"444500893271","displayName":"thesis","name":"projects/thesis-7e2d7","resources":{"hostingSite":"thesis-7e2d7"},"state":"ACTIVE","etag":"1_077b1e1d-6e9e-499a-888b-45febab6033d"}
+[info] +  hosting[thesis-7e2d7]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting because none of the running emulators have a UI component. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting because none of the running emulators have a UI component."}}
+[debug] [2025-11-04T16:08:52.722Z] Could not find VSCode notification endpoint: FetchError: request to http://localhost:40001/vscode/notify failed, reason: . If you are not running the Firebase Data Connect VSCode extension, this is expected and not an issue.
 [info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
 
-To force them to exit run:
+┌──────────┬──────────────────────────────────┐
+│ Emulator │ Host:Port                        │
+├──────────┼──────────────────────────────────┤
+│ Hosting  │ Failed to initialize (see above) │
+└──────────┴──────────────────────────────────┘
+  Emulator Hub not running.
+  Other reserved ports: 4500
 
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:17.342Z] Received signal SIGINT (Ctrl-C) 8
-[info]  
-[debug] [2025-11-04T15:29:17.343Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 8 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:17.626Z] Received signal SIGINT (Ctrl-C) 9
-[info]  
-[debug] [2025-11-04T15:29:17.627Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 9 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:17.908Z] Received signal SIGINT (Ctrl-C) 10
-[info]  
-[debug] [2025-11-04T15:29:17.908Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 10 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:18.139Z] Received signal SIGINT (Ctrl-C) 11
-[info]  
-[debug] [2025-11-04T15:29:18.140Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 11 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:18.381Z] Received signal SIGINT (Ctrl-C) 12
-[info]  
-[debug] [2025-11-04T15:29:18.383Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 12 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:18.615Z] Received signal SIGINT (Ctrl-C) 13
-[info]  
-[debug] [2025-11-04T15:29:18.616Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 13 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:18.864Z] Received signal SIGINT (Ctrl-C) 14
-[info]  
-[debug] [2025-11-04T15:29:18.865Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 14 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:19.092Z] Received signal SIGINT (Ctrl-C) 15
-[info]  
-[debug] [2025-11-04T15:29:19.092Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 15 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:19.342Z] Received signal SIGINT (Ctrl-C) 16
-[info]  
-[debug] [2025-11-04T15:29:19.344Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 16 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:19.575Z] Received signal SIGINT (Ctrl-C) 17
-[info]  
-[debug] [2025-11-04T15:29:19.576Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 17 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:20.390Z] Received signal SIGINT (Ctrl-C) 18
-[info]  
-[debug] [2025-11-04T15:29:20.392Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 18 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:20.767Z] Received signal SIGINT (Ctrl-C) 19
-[info]  
-[debug] [2025-11-04T15:29:20.767Z] Skipping clean onExit() and cleanShutdown()
-[warn] !  emulators: Received SIGINT (Ctrl-C) 19 times. You have forced the Emulator Suite to exit without waiting for 0 subprocess to finish. These processes may still be running on your machine:  
-[info] 
-┌──────────┬───────────┬─────┐
-│ Emulator │ Host:Port │ PID │
-└──────────┴───────────┴─────┘
-
-To force them to exit run:
-
-[info] TASKKILL  /T
-
-[debug] [2025-11-04T15:29:20.789Z] Error: Timed out.
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2025-11-04T16:08:53.132Z] Error: Timed out.
     at Timeout._onTimeout (C:\Users\Toni\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:275:49)
     at listOnTimeout (node:internal/timers:608:17)
     at process.processTimers (node:internal/timers:543:7)

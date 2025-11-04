@@ -3,10 +3,10 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.23.0/firebas
 import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut } from 'https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js';
 import { getFirestore, collection, addDoc, getDocs, query, where, orderBy } from 'https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js';
 import { getStorage } from 'https://www.gstatic.com/firebasejs/9.23.0/firebase-storage.js';
-import { getAI, getGenerativeModel, GoogleAIBackend } from 'https://www.gstatic.com/firebasejs/9.23.0/firebase-ai.js';
+// import { getAI, getGenerativeModel, GoogleAIBackend } from 'https://www.gstatic.com/firebasejs/9.23.0/firebase-ai.js';
 
 // 您的Firebase项目配置
-const firebaseConfig = {
+export const firebaseConfig = {
   apiKey: "AIzaSyDB6TQEPF-yUHPqlKQ2nl-jadQGuOTE0-U",
   authDomain: "thesis-7e2d7.firebaseapp.com",
   projectId: "thesis-7e2d7",
@@ -25,15 +25,15 @@ const db = getFirestore(app);
 const storage = getStorage(app);
 
 // 初始化 Firebase AI
-const ai = getAI(app, { backend: new GoogleAIBackend() });
-const model = getGenerativeModel(ai, { model: "gemini-2.5-flash" });
+// const ai = getAI(app, { backend: new GoogleAIBackend() });
+// const model = getGenerativeModel(ai, { model: "gemini-2.5-flash" });
 
 // 导出服务以供其他文件使用
 window.auth = auth;
 window.db = db;
 window.storage = storage;
-window.ai = ai;
-window.model = model;
+// window.ai = ai;
+// window.model = model;
 
 // 导出Firebase函数以供全局使用
 window.firebaseFunctions = {
@@ -47,9 +47,9 @@ window.firebaseFunctions = {
   query,
   where,
   orderBy,
-  getAI,
-  getGenerativeModel,
-  GoogleAIBackend
+  // getAI,
+  // getGenerativeModel,
+  // GoogleAIBackend
 };
 
 // 通用AI生成函数
